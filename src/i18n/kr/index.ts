@@ -5,8 +5,8 @@ export default {
   connect: '연결',
   disconnect: '연결해제',
   copy: '복사',
-  from: '에서',
-  to: '으로',
+  from: '보내기',
+  to: '받기',
   add: '추가',
   estimated: '예상',
   forget: '잊어버리기',
@@ -165,7 +165,7 @@ export default {
     withdrawGuide: '자산 출금이 가능합니다.',
     withdrawTitle: '출금 준비',
     unregisteredAlert: '이 프로젝트는 등록되어 있지 않습니다. 클레임을 수행하면 자산이 반납됩니다.',
-    claimAndUnbond: '클레임 및 언본딩',
+    claimAndUnbond: '클레임 및 본딩 해제',
   },
   myReward: {
     totalStaked: '총 스테이킹',
@@ -177,12 +177,12 @@ export default {
     totalEarned: '총 보상 (전체)',
     availableToClaimTip:
       '디앱 별 스테이킹한 날짜 수가 표기 됩니다. 한 번에 클레임 가능한 최대 날짜 숫자는 50입니다. 만약 클레임을 한지 오래 되었다면, 클레임을 몇 차례 수행할 필요가 있습니다.',
-    restakeTip: '기능을 켜둠으로, 클레임을 할 때 보상이 자동적으로 재스테이킹 됩니다.',
+    restakeTip: '기능을 켜둠으로, 클레임한 보상이 자동적으로 재스테이킹 됩니다.',
   },
   dappStaking: {
     myStaking: '나의 스테이킹',
     myRewards: '나의 보상',
-    unbonding: '언본딩',
+    unbonding: '본딩 해제',
     myDapps: '나의 디앱',
     dappRegistered: '축하합니다!! 컨트랙트가 승인되었습니다. 자세한 정보들을 제출해 주세요.',
     welcomeBanner:
@@ -298,7 +298,7 @@ export default {
     },
     error: {
       onlySupportsSubstrate: '디앱 스테이킹은 서브스트레이트 지갑만 지원합니다.',
-      notEnoughMinAmount: '스테이킹 하고자 하는 토큰 수량이 {amount} {symbol} 보다 큽니다.',
+      notEnoughMinAmount: '스테이킹하는 토큰 수량은 {amount} {symbol} 보다 커야합니다.',
       allFundsWillBeTransferred:
         '최소 스테이킹 수량이 {minStakingAmount} {symbol} 이므로 모든 자산이 전송됩니다.',
     },
@@ -415,7 +415,7 @@ export default {
       oneEra: '1 일:',
       sevenEras: '7 일:',
       thirtyEras: '30 일:',
-      secs: ' 초',
+      secs: '초',
       era: '일',
       progress: '{value}%',
       eta: 'ETA {value}',
